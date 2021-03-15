@@ -1,12 +1,12 @@
 ## Overview
-A TensorFlow Implementation of [DeepOnKHATT: An End-to-End Arabic Online Handwriting Recognition System]
+A TensorFlow implementation of [DeepOnKHATT: An End-to-End Arabic Online Handwriting Recognition System]
 
 ## Environment Setup
 ```
 pip install -r requirements.txt
 ```
 
-## Data Prepreation 
+## Data Preparation 
 All handwriting samples have to be in the following format 
 ```
 679.785826771654 70.0346456692913 0
@@ -29,11 +29,11 @@ All samples files should have label file (examples and jupyter notebook provided
 General configuration can be found in neural_network.ini file
 
 ## Training
-To strat training from scratch run the following command: \
+To start training from scratch run the following command: \
 ```
 python train.py
 ```
-To load pre-trained model and continue training run the following command: \
+To load the pre-trained model and continue training run the following command: \
 
 
 
@@ -48,7 +48,7 @@ python train.py --config neural_network.ini --name model.ckpt-20
 git clone https://github.com/kpu/kenlm
 ` 
 \
-then bulid it 
+then build it 
 
 
 ```
@@ -61,10 +61,10 @@ make -j 4
 
 
 
- **2.  Providing the corpus** \
-The file of corpus shoud have a one Arabic sentence per line. Then, You will encode the entire file using script provided in features directory (data_preparation.ipynb).
+**2.  Providing the corpus** \
+The file of the corpus should have one Arabic sentence per line. Then, You will encode the entire file using the script provided in the features directory (data_preparation.ipynb).
 \
- **3.Creating arpa file** \
+ **3. Creating arpa file** \
 ```
 ./bin/lmplz --text corpus.txt --arpa words.arpa --o 3
 ```
@@ -75,9 +75,9 @@ The file of corpus shoud have a one Arabic sentence per line. Then, You will enc
 **5. Building the trie** \
 `./generate_trie alphabet.txt lm.binary trie`
 
-## Runing a demo
+## Running a demo
 
-In this demo, you can demonstrate the full end2end DeepOnKHATT system and you can write on canvas and DeepOnKHATT will recognize your handwriting in real time. \
+In this demo, you can demonstrate the full end2end DeepOnKHATT system and you can write on canvas and DeepOnKHATT will recognize your handwriting in real-time. \
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fakhralwajih/DeepOnKHATT/blob/main/DeepOnKHATT.ipynb)
 
 
