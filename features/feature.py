@@ -2,7 +2,7 @@
 import math
 import numpy as np
 
-
+np.warnings.filterwarnings('ignore', category=np.VisibleDeprecationWarning)
 
 
 def calculate_feature_vector_sequence(ink, args, delayed_strokes=None):
