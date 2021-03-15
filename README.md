@@ -77,12 +77,12 @@ The file of corpus shoud have a one Arabic sentence per line. Then, You will enc
 
 ## Runing a demo
 
-In this demo, you can demonstrate the full end2end DeepIn KHATT system and you can write on canvas and DeepOnKHATT will recognize your handwriting in real time. \
+In this demo, you can demonstrate the full end2end DeepOnKHATT system and you can write on canvas and DeepOnKHATT will recognize your handwriting in real time. \
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fakhralwajih/DeepOnKHATT/blob/main/DeepOnKHATT.ipynb)
 
 
-## pre-trained model and LM model 
-You downloal them from the following links: \
+## Pre-trained model and LM model 
+You can download them from the following links: \
 https://drive.google.com/uc?id=1Z_gzzWVjskv_1JqErGuz8ZVfCSNaC3VY  \
 https://drive.google.com/uc?id=1MqhnAcXMwT_nq_z-01CRhWKLYJYZBa1A  \
 https://drive.google.com/uc?id=1-YAltfi_4Klvu_-f72iSkHboM46-iH_t 
