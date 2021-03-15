@@ -1,4 +1,4 @@
-tensorflow==1.15.0
+tensorflow-gpu==1.15
 ds_ctcdecoder==0.6.1
 mako==1.0.6
 matplotlib==2.0.0
