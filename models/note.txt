@@ -1,1 +1,4 @@
 models will be here!
+
+You can download pre-trained model
+https://drive.google.com/uc?id=1Z_gzzWVjskv_1JqErGuz8ZVfCSNaC3VY
