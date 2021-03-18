@@ -77,7 +77,7 @@ The file of the corpus should have one Arabic sentence per line. Then, You will 
 
 ## Running a demo
 
-In this demo, you can demonstrate the full end2end DeepOnKHATT system and you can write on canvas and DeepOnKHATT will recognize your handwriting in real-time. \
+In this demo, you can demonstrate the full end2end DeepOnKHATT system and you can write on canvas and DeepOnKHATT will recognize your handwriting in real-time. Demo will be run in Google's Colaboratory, a Jupyter notebook environment that runs entirely in the cloud, you don't need to download anything to your local machine. 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/fakhralwajih/DeepOnKHATT/blob/main/DeepOnKHATT.ipynb)
 
 
