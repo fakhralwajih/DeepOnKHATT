@@ -4,7 +4,6 @@ import os
 import numpy as np
 from text import text_to_char_array, normalize_txt_file
 
-
 def get_handwriting_and_transcript(txt_files, hw_files, n_input, n_context):
     '''
     Loads handwriting files and text transcriptions from ordered lists of filenames.

@@ -10,7 +10,6 @@ from load_hw_to_mem import get_handwriting_and_transcript, pad_sequences
 from text import sparse_tuple_from
 from set_dirs import get_data_dir
 
-
 DataSets = namedtuple('DataSets', 'train dev test')
 
 import numpy as np

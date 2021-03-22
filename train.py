@@ -31,7 +31,7 @@ class Trainer(object):
     Class to train a handwriting recognition model with TensorFlow.
 
     Requirements:
-    - TensorFlow 1.4.0
+    - TensorFlow 1.5.0
     - Python 3.7
     - Configuration: $Handwriting/configs/neural_network.ini
 
@@ -93,7 +93,7 @@ class Trainer(object):
 
         self.network_type = parser.get(config_header, 'network_type')
 
-        # Number of mfcc features 20
+        # Number of  features 20
         self.n_input = parser.getint(config_header, 'n_input')
 
         # Number of contextual samples to include
@@ -103,7 +103,7 @@ class Trainer(object):
         # self.random_seed = parser.getint(config_header, 'random_seed')
         self.model_dir = parser.get(config_header, 'model_dir')
 
-        # set the session name Fakhr        
+        # set the session name         
         #self.session_name = '{}_{}'.format(
         #    self.network_type, time.strftime("%Y%m%d-%H%M%S"))
         self.session_name = '{}'.format(
@@ -272,7 +272,7 @@ class Trainer(object):
             self.sess.close()
 
     def setup_network_and_graph(self):
-        # e.g: log filter bank or MFCC features
+        # e.g: features
         # shape = [batch_size, max_stepsize, n_input + (2 * n_input * n_context)]
         # the batch_size and max_stepsize can vary along each step
         self.input_tensor = tf.placeholder(

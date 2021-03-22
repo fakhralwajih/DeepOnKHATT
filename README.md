@@ -60,7 +60,6 @@ make -j 4
 ```
 
 
-
 **2.  Providing the corpus** \
 The file of the corpus should have one Arabic sentence per line. Then, You will encode the entire file using the script provided in the features directory (data_preparation.ipynb).
 \
