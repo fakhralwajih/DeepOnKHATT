@@ -59,8 +59,8 @@ def process_single_file(file,filename, outfilename, normalize=True):
     # otherwise we just save the feature vector sequence
     print("Writing {}...".format(outfilename))
     feat_seq_mat=feat_seq_mat.astype('float32')
-    # np.save(outfilename, feat_seq_mat)
-    feat_seq_mat.tofile(outfilename)
+    np.save(outfilename, feat_seq_mat)
+    #feat_seq_mat.tofile(outfilename)
 
 
 
@@ -70,7 +70,7 @@ def main():
     print(len(glob.glob("*.txt")))
     for filename in glob.glob("*.txt") :
             with open(filename) as file:
-                process_single_file(file,filename, 'inputs/%s_input.bin' % (filename.replace(".txt","")), normalize=True)
+                process_single_file(file,filename, 'inputs/%s_input.npy' % (filename.replace(".txt","")), normalize=True)
                 file.close()
                 try:
                     os.rename(filename,'processed/'+filename)
