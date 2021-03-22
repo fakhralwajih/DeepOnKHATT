@@ -66,7 +66,7 @@ def process_single_file(file,filename, outfilename, normalize=True):
 
 def main():
     
-    os.chdir("E:/FCI/Handwriting/Paper/HandwritingColab1_2/features/inks")
+    os.chdir("/features/inks")
     print(len(glob.glob("*.txt")))
     for filename in glob.glob("*.txt") :
             with open(filename) as file:
