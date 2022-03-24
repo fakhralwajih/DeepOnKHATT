@@ -51,7 +51,8 @@ class Trainer(object):
     # License, v. 2.0. If a copy of the MPL was not distributed with this
     # file, You can obtain one at http://mozilla.org/MPL/2.0/.
     '''
-
+    #TODO: upgrade tensorflow to 2.* versioN
+    #      change logging: https://stackoverflow.com/questions/55318626/module-tensorflow-has-no-attribute-logging
     def __init__(self,
                  config_file='neural_network.ini',
                  model_name=None,
@@ -559,7 +560,7 @@ if __name__ == '__main__':
   #'model-best.ckpt'
     import sys
     print(sys.version)
-	import click
+    import click
 
     # Use click to parse command line arguments
     @click.command()

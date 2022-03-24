@@ -13,7 +13,7 @@ from set_dirs import get_data_dir
 DataSets = namedtuple('DataSets', 'train dev test')
 
 import numpy as np
-def handwriting_to_input_vector(points, numcep, numcontext):
+def handwriting_to_input_vector(points, numcep, numcontext): #modify mozilla function
     '''
     Turn an audio file into feature representation.
 
@@ -25,8 +25,6 @@ def handwriting_to_input_vector(points, numcep, numcontext):
     # file, You can obtain one at http://mozilla.org/MPL/2.0/.
     '''
 
-    
-    
     # Get Features 
     
     orig_inputs =points  # (57,20)
@@ -252,7 +250,7 @@ class DataSet:
                  #print(hw_files)
                  
         
-        (source, _, target, _) = get_audio_and_transcript(txt_files,
+        (source, _, target, _) = get_handwriting_and_transcript(txt_files,
                                                           hw_files,
                                                           self._numcep,
                                                           self._numcontext)
